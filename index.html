@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <!-- Попап добавления карточки -->
+      <!-- Попап новой карточки -->
       <div class="popup popup_type_new-card">
         <div class="popup__content">
           <button type="button" class="popup__close"></button>
@@ -130,7 +130,7 @@
         </div>
       </div>
 
-      <!-- Попап изменения аватара -->
+      <!-- Попап обновления аватара -->
       <div class="popup popup_type_edit-avatar">
         <div class="popup__content">
           <button type="button" class="popup__close"></button>
@@ -154,19 +154,21 @@
         </div>
       </div>
 
-      <!-- Попап статистики (Вариант 3) — раскомментирован -->
+      <!-- Попап статистики пользователей -->
       <div class="popup popup_type_info">
         <div class="popup__content popup__content_content_info">
           <button type="button" class="popup__close"></button>
-          <h3 class="popup__title">Статистика карточек</h3>
+          <h3 class="popup__title">Статистика</h3>
           <dl class="popup__info"></dl>
+          <h4 class="popup__text"></h4>
+          <ul class="popup__list"></ul>
         </div>
       </div>
 
     </div>
 
 
-    <!-- Шаблон карточки — оригинальный, с раскомментированными элементами -->
+    <!-- Шаблон карточки -->
     <template id="card-template">
       <li class="places__item card">
         <img class="card__image" src="" alt="" />
@@ -183,12 +185,17 @@
       </li>
     </template>
 
-    <!-- Шаблон строки статистики — раскомментирован -->
+    <!-- Шаблон строки статистики -->
     <template id="popup-info-definition-template">
       <div class="popup__info-item">
         <dt class="popup__info-term"></dt>
         <dd class="popup__info-description"></dd>
       </div>
+    </template>
+
+    <!-- Шаблон пользователя в списке -->
+    <template id="popup-info-user-preview-template">
+      <li class="popup__list-item popup__list-item_type_badge"></li>
     </template>
 
   </body>
